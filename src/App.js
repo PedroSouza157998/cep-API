@@ -15,7 +15,7 @@ function App() {
     const data = await promise.json()
     setLocation(data.localidade)
     setUf(data.uf)
-  }, [setUf, setLocation, cepInput],)
+  }, [setUf, setLocation, cepInput])
   function createCard() {
     if (location) {
       let newListCities = [...listCities];
